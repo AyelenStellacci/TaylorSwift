@@ -1,0 +1,35 @@
+/* Header */
+header{
+    display: flex;
+    background-color: $color-header;
+    justify-content: space-between;
+}
+.navbar navbar-expand-lg navbar-light{
+    display: flex;
+    background-color: $color-header;
+    padding: 10px;
+    justify-content: flex-end;
+}
+.navbar-light-active-color{
+    font-family: $font-titulos;
+    color: $color-suscribete;
+}
+a.nav-link.active{
+    display: flex;
+    justify-content: flex-end;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+li{
+    list-style: none;
+}

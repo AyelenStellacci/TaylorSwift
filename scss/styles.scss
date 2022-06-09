@@ -1,0 +1,436 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+
+/* Body */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: $color-fondo;
+}
+
+/* Index */
+.index{
+    &__main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                img{
+                    width: 80%;  
+                }
+        }
+        contenido{
+            justify-content: center;
+            text-align: justify;
+            padding-top: 30px;
+        }
+
+    }
+    &__video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__imagen{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        padding-bottom: 40px;
+        align-items: center;
+        img{
+            width: 80%;
+                &:hover{
+                    transform: scale(1.1);
+                }
+        }
+    }
+}
+
+/* Discografia */
+.discografia{
+    &__main{
+        display: grid;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: justify;
+        align-items: center;
+        gap: 20px;
+        width: 90%;
+    }
+    &__introduccion:first-child{
+        grid-column: 1/4;
+    }
+    &__portada{
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 32px;
+                img{
+                width: 55%;
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+            }
+        }
+    }
+    &__albumes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* Galeria */
+.galeria{
+    &__main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin: 4%;
+    gap: 6px;        
+    }
+    &__contenido{
+    width: 100%;
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+}
+
+/* Premios */
+.premios{
+    &__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+        h1{
+            margin-top: 20px;
+        }
+        table{
+            display: flex;
+            flex-wrap: wrap;    
+            flex-direction: column;
+            align-items: center;
+                tr{
+                    td{
+                    padding: 35px;     
+                    }
+                    th{
+                        padding: 35px;
+                    }
+                }
+        }
+    }
+}
+/* Suscribete */
+.suscribete {
+    &__body{
+    background-image: url(../recursos/Portadas/TaylorSuscribete3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+        main{   
+            display: flex;
+            flex-wrap: wrap;    
+            flex-direction: column;
+            text-align: left;
+            margin-top: 35px;
+            margin-bottom: 100px;
+            margin-left: 50px;
+            padding: 20px;
+            border-radius: 20px;
+                .suscribete__div{
+                    width: 40%;
+                    background-color: rgba($color: #000000, $alpha: 0.3);
+                    padding: 20px;
+                    border-radius: 20px;
+                }
+                label{
+                    margin-bottom: 10px;
+                }
+            }
+    }
+    &__botones{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-left: 15px;
+            .botones{
+                border-color: $color-titulos;
+                background-color: $color-titulos;
+                color: white;
+                padding: 7px;
+                margin: 10px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                &:hover{
+                    transform: scale(1.3);
+                    background-color: $color-contenido;
+                    border-color: $color-contenido;    
+                }
+            }
+    }
+}
+/* Celular */
+@media (min-width: 320px) and (max-width: 540px){
+    /* Header */
+    header{
+        flex-direction: row;
+            ul{
+                align-items: flex-end;
+            }
+    }
+    
+    /* Index */
+    .index{
+        &__main{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+                div{
+                    img{
+                        align-items: center;
+                    }
+                }
+            }
+            &__contenido{
+                padding: 10px;
+            }  
+    }
+    /* Discografia */
+    .discografia{
+        &__main{
+            display: flex;
+            flex-wrap: wrap;
+                &__portadas{
+                    width: 65%;
+                }
+        }
+    } 
+
+    /* Galeria */
+    .galeria__main{
+        display: flex;
+        flex-wrap: wrap;
+            &:hover{
+                transform: scale(1);
+            }
+    }
+
+    /* Premios */
+    .premios{
+        &__main{
+            display: flex;
+            justify-content: center;
+                td{
+                    padding: 5px;
+                }
+                tr{
+                    padding: 5px; 
+                }
+        }
+    }
+ 
+    /* Suscribete */
+    .suscribete{
+        &__body{
+            background-image: url(../recursos/Portadas/TaylorSuscribete4.jpg);
+            background-size: cover;
+                main{
+                display: flex;
+                font-size: small;
+                align-items: center;
+                text-align: center;
+                color:$color-contenido;
+                margin-left: 0px;
+                    .suscribete__div{
+                        margin-top: 30px;
+                        background-color: rgba($color: #000000, $alpha: 0.3);
+                        color: $color-suscribete;
+                        width: 90%;
+                        justify-content: center;
+                    }
+            }
+            }
+        &__botones{
+            justify-content: center;
+        }
+    }
+}
+/* Tablet */
+@media (min-width: 541px) and (max-width: 720px){
+    /* Header */
+    header{
+        flex-direction: row;
+            ul{
+                align-items: flex-end;
+            }
+    }
+    
+    /* Index */
+    .index{
+        &__main{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__contenido{
+            padding: 30px;
+        }
+    }
+    
+    /* Discografia */
+    .discografia{
+        &__main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__portadas{
+            width: 45%;
+        }
+    }
+    
+    /* Galeria */
+    .galeria{
+        &__main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &:hover{
+            transform: scale(1);
+        }
+    }
+
+    /* Premios */
+    .premios{
+        &__main{
+            display: flex;
+            justify-content: center;
+            font-size: small;
+                td{
+                    padding: 5px;
+                }
+                tr{
+                    padding: 5px; 
+                }
+        }
+    }
+
+    /* Suscribete */
+    .suscribete{
+        &__body{
+            background-image: url(../recursos/Portadas/TaylorSuscribete2.jpg);
+            background-size: cover;
+                main{
+                    font-size: small;
+                    align-items: center;
+                    text-align: center;
+                    align-content: flex-end;
+                    color: $color-suscribete;
+                    .suscribete__div{
+                        width: 55%;
+                        padding: 20px;
+                        border-radius: 20px;
+                        justify-content: center;
+                    }
+                }
+        }
+        &__botones{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+}
+}
+@media (min-width: 721px) and (max-width: 991px){
+    .index{
+        &__main{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    
+    .suscribete{
+        &__body{
+            background-image: url(../recursos/Portadas/TaylorSuscribete.jpg);
+            background-size: cover;
+        }
+        &__main{
+                font-size: small;
+                align-items: flex-start;
+                text-align: center;
+                margin-left: 0px;
+                    .suscribete__div{
+                        color: $color-suscribete;
+                        padding: 20px;
+                        border-radius: 20px;
+                        justify-content: center;
+                    }
+            }
+        &__botones{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-color: $color-titulos;
+            color: white;
+        }
+        
+    }
+   
+}
+/* MAPA */
+$sizes: (h1: 4.5rem, h2: 3rem);
+/* EACH */
+    @each $titulo, $size in $sizes{
+        #{$titulo}{
+            font-size: #{$size};
+            color: $color-titulos;
+            font-family: $font-titulos;
+        }
+    }
+
+/* MIXIN */
+@mixin texto{
+    font-family: $font-principal;
+    font-size: 1rem;
+    color: $color-contenido;
+    
+}
+@mixin estructura{
+    @include texto;
+    @include titulos;
+}
+@mixin titulos{
+    h1: $font-titulos;
+    h2: $font-titulos;
+    color: $color-titulos;
+}
+.main__titulos{
+    @include titulos;
+}
+/* EXTEND */
+.suscribete-color{
+    color: white;
+}
+
+.suscribete__main{
+    @extend .suscribete-color
+}

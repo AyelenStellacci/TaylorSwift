@@ -1,0 +1,262 @@
+/* Body */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+  background-color: #F4E4C5;
+  font-family: "Roboto Slab", serif;
+  color: #715E3A; }
+
+/* Header */
+header {
+  display: flex;
+  background-color: #D1BA8E;
+  justify-content: space-between; }
+
+.navbar navbar-expand-lg navbar-light {
+  display: flex;
+  background-color: #D1BA8E;
+  padding: 10px;
+  justify-content: flex-end; }
+
+a.nav-link.active {
+  display: flex;
+  justify-content: flex-end; }
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between; }
+
+a {
+  text-decoration: none;
+  color: #715E3A;
+  font-weight: 500; }
+
+li {
+  list-style: none; }
+
+/* Main */
+main {
+  display: flex;
+  flex-wrap: wrap; }
+
+h1 {
+  font-family: "Roboto Mono", monospace;
+  color: #AF9053;
+  font-size: xx-large; }
+
+.subtitulos {
+  font-family: "Roboto Mono", monospace;
+  color: #AF9053;
+  font-size: x-large; }
+
+/* Index */
+.index__main {
+  display: grid;
+  grid-template-columns: repeat(1fr 2);
+  font-family: "Roboto Slab", serif;
+  margin: 20px; }
+
+.index__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  width: 100%;
+  color: #715E3A; }
+
+.index__div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  .index__div__imagen {
+    width: 80%; }
+
+/* Discografia y Filmografia */
+.main__trabajo {
+  display: grid;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  grid-template-columns: 2fr 1fr;
+  text-align: justify;
+  align-items: center;
+  gap: 20px;
+  width: 85%; }
+
+.imagen__portada a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contenido__trabajo:first-child {
+  grid-column: 1/3; }
+
+.portadas {
+  width: 50%; }
+
+.portadas:hover {
+  transform: scale(1.5); }
+
+/* Galeria */
+.galeria__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin: 4%;
+  gap: 6px; }
+
+.galeria__contenido {
+  width: 100%; }
+  .galeria__contenido:hover {
+    transform: scale(1.5); }
+
+/* Tour */
+.tour__main {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  align-items: center; }
+
+.tour__tabla {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+.tour tr td {
+  padding: 10px; }
+
+/* Suscribete */
+.suscribete__main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center; }
+
+.suscribete__botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.suscribete__label {
+  margin-bottom: 10px; }
+
+/* .botones es de suscribete y de tour */
+.botones {
+  display: flex;
+  border-color: #AF9053;
+  background-color: #AF9053;
+  color: white;
+  padding: 7px;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px; }
+  .botones:hover {
+    transform: scale(1.3);
+    background-color: #715E3A;
+    border-color: #715E3A; }
+
+/* Footer */
+.footer__general {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #D1BA8E;
+  background-position: bottom;
+  bottom: 0px;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  padding-top: 15px;
+  height: 90px; }
+
+.footer__suscribete {
+  position: absolute; }
+
+.footer__redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.icono:hover {
+  transform: scale(1.3); }
+
+/* MEDIA QUERIES */
+/* Celular */
+@media (min-width: 320px) and (max-width: 540px) {
+  /* Header */
+  header {
+    flex-direction: row;
+    background-color: #D1BA8E; }
+  ul {
+    align-items: flex-end; }
+  /* Index */
+  .main__index {
+    display: flex;
+    flex-wrap: wrap; }
+  .contenido__index {
+    padding: 10px; }
+  /* Discografia y filmografia */
+  .main__trabajo {
+    display: flex;
+    flex-wrap: wrap; }
+  .portadas {
+    width: 65%; }
+  /* Galeria */
+  .main__galeria {
+    display: flex;
+    flex-wrap: wrap; }
+  .galeria:hover {
+    transform: scale(1); }
+  /* Tour */
+  .main__tour {
+    display: flex;
+    justify-content: center; }
+  .fotos__tour {
+    display: none; }
+  /* Suscribete */
+  .main__suscribete {
+    font-size: large; } }
+
+/* Tablet */
+@media (min-width: 541px) and (max-width: 720px) {
+  /* Header */
+  header {
+    flex-direction: row;
+    background-color: #D1BA8E; }
+  ul {
+    align-items: flex-end; }
+  /* Index */
+  .main__index {
+    display: flex;
+    flex-wrap: wrap; }
+  .contenido__index {
+    padding: 30px; }
+  /* Discografia y filmografia */
+  .main__trabajo {
+    display: flex;
+    flex-wrap: wrap; }
+  .portadas {
+    width: 45%; }
+  /* Galeria */
+  .galeria:hover {
+    transform: scale(1); }
+  /* Tour */
+  .main__tour {
+    display: flex;
+    justify-content: center; }
+  .fotos__tour {
+    display: none; }
+  /* Suscribete */
+  .main__suscribete {
+    font-size: large; } }
+
+@media (min-width: 721px) and (max-width: 991px) {
+  .portadas {
+    width: 80%; } }

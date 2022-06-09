@@ -1,0 +1,379 @@
+/* Header */
+header {
+  display: flex;
+  background-color: #822;
+  justify-content: space-between; }
+
+.navbar navbar-expand-lg navbar-light {
+  display: flex;
+  background-color: #822;
+  padding: 10px;
+  justify-content: flex-end; }
+
+.navbar-light-active-color {
+  font-family: "Amatic SC", cursive;
+  color: white; }
+
+a.nav-link.active {
+  display: flex;
+  justify-content: flex-end; }
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  color: white; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500; }
+
+li {
+  list-style: none; }
+
+.footer__general {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #D1BA8E;
+  background-position: bottom;
+  bottom: 0px;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  padding-top: 15px;
+  height: 90px; }
+  .footer__general redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+.footer__suscribete {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #D1BA8E;
+  color: #715E3A;
+  background-position: bottom;
+  bottom: 0px;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  padding-top: 15px;
+  height: 90px; }
+  .footer__suscribete redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+.icono:hover {
+  transform: scale(1.3); }
+
+/* Body */
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #e7d4ad; }
+
+/* Index */
+.index__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px; }
+  .index__main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .index__main div img {
+      width: 80%; }
+  .index__main contenido {
+    justify-content: center;
+    text-align: justify;
+    padding-top: 30px; }
+
+.index__video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.index__imagen {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding-bottom: 40px;
+  align-items: center; }
+  .index__imagen img {
+    width: 80%; }
+    .index__imagen img:hover {
+      transform: scale(1.1); }
+
+/* Discografia */
+.discografia__main {
+  display: grid;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: justify;
+  align-items: center;
+  gap: 20px;
+  width: 90%; }
+
+.discografia__introduccion:first-child {
+  grid-column: 1/4; }
+
+.discografia__portada a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px; }
+  .discografia__portada a img {
+    width: 55%; }
+    .discografia__portada a img:hover {
+      transform: scale(1.3); }
+
+.discografia__albumes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* Galeria */
+.galeria__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin: 4%;
+  gap: 6px; }
+
+.galeria__contenido {
+  width: 100%; }
+  .galeria__contenido:hover {
+    transform: scale(1.3); }
+
+/* Premios */
+.premios__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px; }
+  .premios__main h1 {
+    margin-top: 20px; }
+  .premios__main table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; }
+    .premios__main table tr td {
+      padding: 35px; }
+    .premios__main table tr th {
+      padding: 35px; }
+
+/* Suscribete */
+.suscribete__body {
+  background-image: url(../recursos/Portadas/TaylorSuscribete3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; }
+  .suscribete__body main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 20px; }
+    .suscribete__body main .suscribete__div {
+      width: 40%;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 20px; }
+    .suscribete__body main label {
+      margin-bottom: 10px; }
+
+.suscribete__botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-left: 15px; }
+  .suscribete__botones .botones {
+    border-color: #822;
+    background-color: #822;
+    color: white;
+    padding: 7px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px; }
+    .suscribete__botones .botones:hover {
+      transform: scale(1.3);
+      background-color: #715E3A;
+      border-color: #715E3A; }
+
+/* Celular */
+@media (min-width: 320px) and (max-width: 540px) {
+  /* Header */
+  header {
+    flex-direction: row; }
+    header ul {
+      align-items: flex-end; }
+  /* Index */
+  .index__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .index__main div img {
+      align-items: center; }
+  .index__contenido {
+    padding: 10px; }
+  /* Discografia */
+  .discografia__main {
+    display: flex;
+    flex-wrap: wrap; }
+    .discografia__main__portadas {
+      width: 65%; }
+  /* Galeria */
+  .galeria__main {
+    display: flex;
+    flex-wrap: wrap; }
+    .galeria__main:hover {
+      transform: scale(1); }
+  /* Premios */
+  .premios__main {
+    display: flex;
+    justify-content: center; }
+    .premios__main td {
+      padding: 5px; }
+    .premios__main tr {
+      padding: 5px; }
+  /* Suscribete */
+  .suscribete__body {
+    background-image: url(../recursos/Portadas/TaylorSuscribete4.jpg);
+    background-size: cover; }
+    .suscribete__body main {
+      display: flex;
+      font-size: small;
+      align-items: center;
+      text-align: center;
+      color: #715E3A;
+      margin-left: 0px; }
+      .suscribete__body main .suscribete__div {
+        margin-top: 30px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        width: 90%;
+        justify-content: center; }
+  .suscribete__botones {
+    justify-content: center; } }
+
+/* Tablet */
+@media (min-width: 541px) and (max-width: 720px) {
+  /* Header */
+  header {
+    flex-direction: row; }
+    header ul {
+      align-items: flex-end; }
+  /* Index */
+  .index__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .index__contenido {
+    padding: 30px; }
+  /* Discografia */
+  .discografia__main {
+    display: flex;
+    flex-wrap: wrap; }
+  .discografia__portadas {
+    width: 45%; }
+  /* Galeria */
+  .galeria__main {
+    display: flex;
+    flex-wrap: wrap; }
+  .galeria:hover {
+    transform: scale(1); }
+  /* Premios */
+  .premios__main {
+    display: flex;
+    justify-content: center;
+    font-size: small; }
+    .premios__main td {
+      padding: 5px; }
+    .premios__main tr {
+      padding: 5px; }
+  /* Suscribete */
+  .suscribete__body {
+    background-image: url(../recursos/Portadas/TaylorSuscribete2.jpg);
+    background-size: cover; }
+    .suscribete__body main {
+      font-size: small;
+      align-items: center;
+      text-align: center;
+      align-content: flex-end;
+      color: white; }
+      .suscribete__body main .suscribete__div {
+        width: 55%;
+        padding: 20px;
+        border-radius: 20px;
+        justify-content: center; }
+  .suscribete__botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; } }
+
+@media (min-width: 721px) and (max-width: 991px) {
+  .index__main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .suscribete__body {
+    background-image: url(../recursos/Portadas/TaylorSuscribete.jpg);
+    background-size: cover; }
+  .suscribete__main {
+    font-size: small;
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 0px; }
+    .suscribete__main .suscribete__div {
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+      justify-content: center; }
+  .suscribete__botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-color: #822;
+    color: white; } }
+
+/* MAPA */
+/* EACH */
+h1 {
+  font-size: 4.5rem;
+  color: #822;
+  font-family: "Amatic SC", cursive; }
+
+h2 {
+  font-size: 3rem;
+  color: #822;
+  font-family: "Amatic SC", cursive; }
+
+/* MIXIN */
+.main__titulos {
+  h1: "Amatic SC", cursive;
+  h2: "Amatic SC", cursive;
+  color: #822; }
+
+/* EXTEND */
+.suscribete-color, .suscribete__main {
+  color: white; }

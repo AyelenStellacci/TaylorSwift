@@ -1,0 +1,25 @@
+{
+  "name": "taylor-swift",
+  "version": "1.0.0",
+  "description": "Pagina promocional de Taylor Swift, donde podras escuchar su musica, enterarte de sus ultimas novedades y mucho mas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyelenStellacci/TaylorSwift.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AyelenStellacci/TaylorSwift/issues"
+  },
+  "homepage": "https://github.com/AyelenStellacci/Taylor-Swift#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
