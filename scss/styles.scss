@@ -30,7 +30,6 @@ body{
             text-align: justify;
             padding-top: 30px;
         }
-
     }
     &__video{
         display: flex;
@@ -65,6 +64,10 @@ body{
         align-items: center;
         gap: 20px;
         width: 90%;
+        .discografia__titulos{
+            display: flex;
+            justify-content: center;
+        }
     }
     &__introduccion:first-child{
         grid-column: 1/4;
@@ -106,8 +109,8 @@ body{
     }
 }
 
-/* Premios */
-.premios{
+/* biografia */
+.biografia{
     &__main{
     display: flex;
     flex-direction: column;
@@ -116,20 +119,6 @@ body{
     margin: 50px;
         h1{
             margin-top: 20px;
-        }
-        table{
-            display: flex;
-            flex-wrap: wrap;    
-            flex-direction: column;
-            align-items: center;
-                tr{
-                    td{
-                    padding: 35px;     
-                    }
-                    th{
-                        padding: 35px;
-                    }
-                }
         }
     }
 }
@@ -230,17 +219,11 @@ body{
             }
     }
 
-    /* Premios */
-    .premios{
+    /* biografia */
+    .biografia{
         &__main{
             display: flex;
             justify-content: center;
-                td{
-                    padding: 5px;
-                }
-                tr{
-                    padding: 5px; 
-                }
         }
     }
  
@@ -315,18 +298,12 @@ body{
         }
     }
 
-    /* Premios */
-    .premios{
+    /* biografia */
+    .biografia{
         &__main{
             display: flex;
             justify-content: center;
             font-size: small;
-                td{
-                    padding: 5px;
-                }
-                tr{
-                    padding: 5px; 
-                }
         }
     }
 
@@ -433,4 +410,17 @@ $sizes: (h1: 4.5rem, h2: 3rem);
 
 .suscribete__main{
     @extend .suscribete-color
+}
+.suscribete__titulo{
+    @extend .suscribete-color
+}
+
+.h3{
+    font-family: $font-titulos;
+    color: $color-contenido;
+    font-size: 2.5rem;
+}
+
+.discografia__titulos{
+    @extend .h3
 }
