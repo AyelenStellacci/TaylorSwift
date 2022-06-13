@@ -63,7 +63,7 @@ header {
   flex-wrap: wrap;
   flex-direction: column;
   background-color: #D1BA8E;
-  color: #715E3A;
+  color: #483b24;
   background-position: bottom;
   bottom: 0px;
   width: 100%;
@@ -267,8 +267,8 @@ body {
     border-radius: 10px; }
     .suscribete__botones .botones:hover {
       transform: scale(1.3);
-      background-color: #715E3A;
-      border-color: #715E3A; }
+      background-color: #483b24;
+      border-color: #483b24; }
 
 /* MEDIA QUERIES */
 /* Celular */
@@ -322,7 +322,7 @@ body {
       font-size: small;
       align-items: center;
       text-align: center;
-      color: #715E3A;
+      color: #483b24;
       margin-left: 0px; }
       .suscribete__body main .suscribete__div {
         margin-top: 30px;
@@ -446,11 +446,21 @@ h2 {
   h2: "Amatic SC", cursive;
   color: #822; }
 
+.body__general {
+  font-family: "Nuosu SIL", serif;
+  font-size: 1rem;
+  color: #483b24; }
+
+.suscribete__body {
+  font-family: "Nuosu SIL", serif;
+  font-size: 1rem;
+  color: #483b24; }
+
 /* EXTEND */
 .suscribete-color, .suscribete__main, .suscribete__titulo {
   color: white; }
 
 .h3, .discografia__titulos {
   font-family: "Amatic SC", cursive;
-  color: #715E3A;
+  color: #483b24;
   font-size: 2.5rem; }

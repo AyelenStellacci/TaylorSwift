@@ -488,13 +488,19 @@ $sizes: (h1: 4.5rem, h2: 3rem);
 .main__titulos{
     @include titulos;
 }
+.body__general{
+    @include texto;
+}
+.suscribete__body{
+    @include texto;
+}
 /* EXTEND */
 .suscribete-color{
     color: white;
 }
 
 .suscribete__main{
-    @extend .suscribete-color
+    @extend .suscribete-color;
 }
 .suscribete__titulo{
     @extend .suscribete-color
