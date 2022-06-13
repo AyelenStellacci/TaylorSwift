@@ -14,12 +14,13 @@ header {
   header .nav-link {
     display: flex;
     justify-content: flex-end;
-    color: white;
     font-family: "Amatic SC", cursive;
     font-size: 1.5rem; }
     header .nav-link:hover {
       transform: scale(1.2);
       color: white; }
+  header .navbar-light .navbar-nav .nav-link.active {
+    color: white; }
   header .div__header {
     align-items: center;
     margin-left: 15px;
@@ -447,11 +448,6 @@ h2 {
   font-family: "Amatic SC", cursive; }
 
 /* MIXIN */
-.main__titulos {
-  h1: "Amatic SC", cursive;
-  h2: "Amatic SC", cursive;
-  color: #822; }
-
 .body__general {
   font-family: "Nuosu SIL", serif;
   font-size: 1rem;
