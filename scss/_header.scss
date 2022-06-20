@@ -3,6 +3,7 @@ header{
     display: flex;
     background-color: $color-header;
     justify-content: space-between;
+    font-display: block;
         .navbar navbar-expand-lg navbar-light{
             display: flex;
             background-color: $color-header;
