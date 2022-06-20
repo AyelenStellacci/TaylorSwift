@@ -229,7 +229,8 @@ body {
   font-display: block; }
 
 .galeria__contenido {
-  width: 100%; }
+  width: 648px;
+  height: 648px; }
   .galeria__contenido:hover {
     transform: scale(1.2); }
 
