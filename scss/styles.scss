@@ -173,8 +173,7 @@ body{
     font-display: block;
     }
     &__contenido{
-    width: 648px;
-    height: 648px;
+    width: 100%;
         &:hover{
             transform: scale(1.2);
         }
