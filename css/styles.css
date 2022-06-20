@@ -148,6 +148,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
+  font-display: block;
   margin: 40px; }
   .biografia__main p {
     text-align: justify;
@@ -194,6 +195,7 @@ body {
   text-align: justify;
   align-items: center;
   gap: 20px;
+  font-display: block;
   width: 90%; }
   .discografia__main .discografia__titulos {
     display: flex;
@@ -223,7 +225,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat 4, 1fr;
   margin: 4%;
-  gap: 6px; }
+  gap: 6px;
+  font-display: block; }
 
 .galeria__contenido {
   width: 100%; }
@@ -245,7 +248,8 @@ body {
     margin-bottom: 100px;
     margin-left: 50px;
     padding: 20px;
-    border-radius: 20px; }
+    border-radius: 20px;
+    font-display: block; }
     .suscribete__body main .suscribete__div {
       width: 40%;
       background-color: rgba(0, 0, 0, 0.4);
