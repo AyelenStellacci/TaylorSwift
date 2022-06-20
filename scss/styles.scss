@@ -17,6 +17,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
+    font-display: block;
         img{
             width: 85%;
             }
@@ -531,12 +532,12 @@ $sizes: (h1: 4.5rem, h2: 3rem);
     @extend .suscribete-color
 }
 
-.h3{
+.h2{
     font-family: $font-titulos;
     color: $color-contenido;
     font-size: 2.5rem;
 }
 
 .discografia__titulos{
-    @extend .h3
+    @extend .h2
 }

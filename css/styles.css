@@ -93,7 +93,8 @@ body {
 .index__main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 40px; }
+  margin-top: 40px;
+  font-display: block; }
   .index__main img {
     width: 85%; }
 
@@ -463,7 +464,7 @@ h2 {
 .suscribete-color, .suscribete__main, .suscribete__titulo {
   color: white; }
 
-.h3, .discografia__titulos {
+.h2, .discografia__titulos {
   font-family: "Amatic SC", cursive;
   color: #483b24;
   font-size: 2.5rem; }
