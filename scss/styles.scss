@@ -168,15 +168,13 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat (4, 1fr);
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 5%;
     gap: 6px;  
     font-display: block;
     justify-content: center;
     }
     &__contenido{
-        width: 300px;
-        height: 300px;
+        width: 100%;
         &:hover{
             transform: scale(1.2);
         }
