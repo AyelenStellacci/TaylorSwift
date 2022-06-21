@@ -227,12 +227,15 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat 4, 1fr;
-  margin: 4%;
+  margin-left: 15%;
+  margin-right: 15%;
   gap: 6px;
-  font-display: block; }
+  font-display: block;
+  justify-content: center; }
 
 .galeria__contenido {
-  width: 100%; }
+  width: 300px;
+  height: 300px; }
   .galeria__contenido:hover {
     transform: scale(1.2); }
 
