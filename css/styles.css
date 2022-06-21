@@ -97,11 +97,12 @@ body {
   margin-top: 40px;
   font-display: block; }
   .index__main img {
-    width: 85%; }
+    width: 90%; }
 
 .index__red:first-child {
   display: flex;
   justify-content: center;
+  align-items: center;
   grid-column: 1/2; }
 
 .index__contenido:nth-child(2) {
@@ -112,6 +113,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center; }
+  .index__contenido:nth-child(2) .index__descripcionred {
+    text-align: justify;
+    margin: 30px; }
 
 .index__video:nth-child(3) {
   grid-column: 1/2;
@@ -153,7 +157,7 @@ body {
   margin: 40px; }
   .biografia__main p {
     text-align: justify;
-    margin: 10px; }
+    margin: 16px; }
   .biografia__main img {
     width: 90%;
     margin: 20px; }
@@ -314,7 +318,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0px; }
+    margin: 20px; }
     .biografia__main img {
       width: 90%;
       margin: 10px;
@@ -369,8 +373,13 @@ body {
   .galeria__main {
     display: flex;
     flex-wrap: wrap; }
-    .galeria__main .galeria__contenido:hover {
-      transform: scale(1); }
+    .galeria__main .galeria__div {
+      display: flex;
+      justify-content: center; }
+      .galeria__main .galeria__div .galeria__contenido {
+        width: 80%; }
+        .galeria__main .galeria__div .galeria__contenido:hover {
+          transform: scale(1); }
   /* biografia */
   .biografia__main {
     display: flex;
@@ -385,7 +394,7 @@ body {
     background-image: url(../recursos/Portadas/TaylorSuscribete2.jpg);
     background-size: cover; }
     .suscribete__body main {
-      font-size: small;
+      font-size: medium;
       align-items: center;
       text-align: center;
       align-content: flex-end;
@@ -406,6 +415,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
+    .index__main img {
+      width: 85%; }
   .biografia__main {
     display: flex;
     flex-direction: column;
@@ -426,7 +437,7 @@ body {
     background-image: url(../recursos/Portadas/TaylorSuscribete.jpg);
     background-size: cover; }
   .suscribete__main {
-    font-size: small;
+    font-size: medium;
     align-items: flex-start;
     text-align: center;
     margin-left: 0px; }
